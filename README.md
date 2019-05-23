@@ -73,7 +73,7 @@ A included [makefile](https://github.com/chipkin/Linux-MSTPCallbackTest/blob/mas
 
 ## Binary
 
-A compiled version of the serial monitor is included in this repo. [serialMonitor](https://github.com/chipkinLinux-MSTPCallbackTest/blob/master/mstpCallbackTest)
+A compiled version of the serial monitor is included in this repo. [mstpCallbackTest](https://github.com/chipkinLinux-MSTPCallbackTest/blob/master/mstpCallbackTest)
 
 ## Change log
 
