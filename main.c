@@ -11,11 +11,12 @@
  * Created on: May 22, 2019 
  * Last updated: May 22, 2019 
  */
+#include "CIBuildSettings.h"
 #include "linuxMSTPFunctions.h"
 #include <iostream> // std::cout, std::ios
 #include <stdio.h>
 
-static const char* APPLICATION_VERSION_MAJOR = "0.0.0.1";
+static const char* APPLICATION_VERSION = "0.0.2";
 
 static const char* CONFIGURATION_SERIAL_PORT = "/dev/ttyS4";
 static const uint8_t CONFIGURATION_TIMER_RANGE_MS = 1;
@@ -45,7 +46,7 @@ int main()
     uint8_t buffer = 'a';
     uint32_t microsecondTimer = 0;
 
-    std::cout << "FYI: MSTP Callback Test. Version: " << APPLICATION_VERSION_MAJOR << std::endl;
+    std::cout << "FYI: MSTP Callback Test. Version: " << APPLICATION_VERSION << "." << CI_PIPELINE_IID << std::endl;
 
     // Test 1: Internal high speed timer.
     // In this test we are testing to see if the high speed timer is accuret internally.
